@@ -2,7 +2,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox
 # Para una interfaz moderna (estilo dark)
-import ttkbootstrap as ttk  
+import ttkbootstrap as ttk      
 from ttkbootstrap.constants import *
 # Para guardar y leer la base de datos de clientes
 import json   
@@ -10,7 +10,7 @@ import json
 import os  
 # Para copiar archivos (fotos y respaldos)   
 import shutil  
- # Para manejar rutas cuando el programa se convierte en .exe
+ # Para manejar rutas cuando el programa se convierte en .exe                               
 import sys    
 # Para procesar y mostrar imagenes (cedulas)
 from PIL import Image, ImageTk  
@@ -74,7 +74,7 @@ class GymApp:
         self.style.configure('Header.TFrame', background="black")
         self.style.configure('Card.TFrame', background=self.color_panel)
         self.style.configure('Title.TLabel', background="black", foreground=self.color_accent, font=("Segoe UI", 28, "bold"))
-        self.style.configure('Search.TLabel', background=self.color_bg, foreground=self.color_accent, font=("Segoe UI", 10, "bold"))
+        self.style.configure('Search.TLabel', background=self.color_bg, foreground= self.color_accent, font=("Segoe UI", 10, "bold"))
 
     def setup_ui(self):
 #Dibuja todos los elementos de la interfaz gráfica (Botones, Entradas, Tabla).
