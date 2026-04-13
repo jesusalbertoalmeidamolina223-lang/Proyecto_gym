@@ -1,6 +1,6 @@
 # Fase 2: Interfaz Visual (UI) y Estilo Dark
 # En esta fase se configura la estética "Neon/Dark" y posicion de los elementos (widgets). Uso de ttkbootstrap nos permite que la aplicacion se vea mejor.
-# --- CONFIGURACIÓN VISUAL ---
+# CONFIGURACIÓN VISUAL
 self.color_bg = "#0B0E14"
 self.color_accent = "#00F5FF"
 self.color_panel = "#161B22"

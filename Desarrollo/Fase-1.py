@@ -17,7 +17,7 @@ class GymApp:
         self.root.title("J.C. TRAINING GROUP - Gestión Pro")
         self.root.geometry("1300x950")
 
-        # --- GESTIÓN DE RUTAS (SOPORTE .EXE) ---
+        # GESTIÓN DE RUTAS (SOPORTE .EXE)
         if getattr(sys, 'frozen', False):
             self.base_dir = os.path.dirname(sys.executable)
         else:
