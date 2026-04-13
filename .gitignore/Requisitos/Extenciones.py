@@ -21,11 +21,8 @@
 # - Error Lens: Visualización inmediata de advertencias y errores.
 
 # 4. NOTAS DE EJECUCIÓN:
-# --------------------------------------------------------------------------------
 # Al iniciar por primera vez, el programa generará automáticamente los archivos 
 # necesarios en el directorio local:
 # - 'clientes_gym.json': Base de datos principal.
 # - Carpeta 'cedulas/': Almacén de fotos de identificación.
 # - Carpeta 'historiales/': Registro histórico de medidas de cada cliente.
-
-# ================================================================================
