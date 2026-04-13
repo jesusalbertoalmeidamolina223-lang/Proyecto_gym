@@ -26,5 +26,3 @@
 # - 'clientes_gym.json': Base de datos principal.
 # - Carpeta 'cedulas/': Almacén de fotos de identificación.
 # - Carpeta 'historiales/': Registro histórico de medidas de cada cliente.
-
-# ================================================================================
