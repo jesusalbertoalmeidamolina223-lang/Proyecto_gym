@@ -1,30 +1,27 @@
+# SISTEMA DE GESTIÓN: J.C. TRAINING GROUP
+# REQUISITOS TECNICOS PARA EL FUNCIONAMIENTO:
 
-#               SISTEMA DE GESTION J.C. TRAINING GROUP - GUIA DE USO
-# Para que este programa se ejecute correctamente, debe cumplir con los 
-# siguientes requisitos.
+# 1. ENTORNO DE EJECUCION:
+#    - Python 3.7 o superior instalado.
+#    - Acceso de escritura en la carpeta del proyecto (para crear la DB y carpetas).
 
-# 1. REQUISITOS DEL ENTORNO (Librerías externas):
-# El Codigo utiliza 'ttkbootstrap' para la interfaz moderna y 'Pillow' para el 
-# procesamiento de imagenes. las puedes instalar ejecutando:
-#     pip install ttkbootstrap Pillow
+# 2. DEPENDENCIAS EXTERNAS (Instalar vía terminal/CMD):
+#    - pip install ttkbootstrap (Interfaz grAfica moderna y temas oscuros).
+#    - pip install Pillow       (Procesamiento y visualización de fotos).
 
-# 2. REQUISITOS DEL SISTEMA:
-# - Python: Versión 3.8 o superior recomendada.
-# - Sistema Operativo: 
-#     * Windows: Tkinter viene incluido por defecto.
-#     * Linux: Requiere instalación manual (sudo apt-get install python3-tk).
+# 3. ESTRUCTURA DE ARCHIVOS (Deben residir en la misma carpeta):
+#    - ejecutor.py      -> ARCHIVO PRINCIPAL.
+#    - app.py           -> Ensamblaje de la interfaz (UI).
+#    - botones.py       -> Definición del panel de control.
+#    - busqueda.py      -> Logica de multimedia y filtros de tabla.
+#    - configuracion.py -> Rutas del sistema y paleta de colores.
+#    - controlador.py   -> Logica de negocio (registro, borrado, carga).
+#    - crud.py          -> Motor de lectura/escritura JSON y validaciones.
+#    - estilos.py       -> Definicion de campos y personalizacion visual.
+#    - respaldos.py     -> Gestion de historial de progreso y copias de seguridad.
 
-# 3. EXTENSIONES RECOMENDADAS PARA DESARROLLO:
-# Para una mejor visualización y depuración del código, se sugiere:
-# - Python (Microsoft): Soporte oficial del lenguaje.
-# - Pylance: Autocompletado e IntelliSense avanzado.
-# - Error Lens: Visualización inmediata de advertencias y errores.
-
-# 4. NOTAS DE EJECUCIÓN:
-# Al iniciar por primera vez, el programa generará automáticamente los archivos 
-# necesarios en el directorio local:
-# - 'clientes_gym.json': Base de datos principal.
-# - Carpeta 'cedulas/': Almacén de fotos de identificación.
-# - Carpeta 'historiales/': Registro histórico de medidas de cada cliente.
-
-# ================================================================================
+# 4. INICIALIZACION AUTOMATICA:
+#    Al ejecutar 'ejecutor.py', el sistema creara automaticamente:
+#    - cedulas     (Carpeta para fotos de atletas).
+#    - historiales (Carpeta para archivos JSON individuales de progreso).
+#    - clientes_gym.json (Base de datos principal).
