@@ -1,7 +1,7 @@
-# J.C. TRAINING GROUP - Gestion de Datos (JSON y Validaciones)
-# NOTA: Este es el motor que lee y escribe en el disco. 
-# Si algo falla aqui, no se guarda el progreso del atleta.
-
+# J.C. TRAINING GROUP - Sistema de Gestion de Atletas
+# Gestion de Datos (JSON y Validaciones)
+# Es el motor de los datos se encarga de guardar y cargar todo el historial.
+# Es importante ya que Si esta logica tira error, basicamente el atleta se queda sin registros en el sistema.
 from estilos import *
 
 class CrudBase(EstilosInterfaz):

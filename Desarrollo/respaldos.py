@@ -1,7 +1,7 @@
-# J.C. TRAINING GROUP - Modulo de Evolucion y Copias de Seguridad
-# NOTA: Este archivo es muy importante para que los atletas vean sus cambios fisicos.
-# Tambien incluye la función de respaldo para no perder nada si hay que formatear la PC o mover la carpeta del sistema.
-
+# J.C. TRAINING GROUP - Sistema de Gestion de Atletas
+# Historial de evolucion y copias de seguridad.
+# en esta parte se gestionan las graficas y la evolucion de medidas de los atletas.
+# Metimos una funcion de respaldo manual para que si el usuario cambia de PC, se pueda llevar toda la base de datos sin problemas.
 from busqueda import *
 
 class HistorialRespaldos(BusquedaMedia):

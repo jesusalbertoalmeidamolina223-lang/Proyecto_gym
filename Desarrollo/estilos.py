@@ -1,7 +1,7 @@
-# J.C. TRAINING GROUP - Diseño de Interfaz y Diccionario de Datos
-# Aqui definimos como se ve la app y qur datos vamos a pedir.
-# Si mañana quiero agregar un campo nuevo (ej. Correo), solo lo sumariamos a la lista.
-
+# # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
+# Diseno de Interfaz y Diccionario de Datos.
+# Maneja la Interfaz y Estructura definiendo el estilo de la aplicacion con el esquema de los datos.
+# Si llega el momento de agregar algo mas como el correo o el Instagram, se agrega a la lista y el sistema lo toma solo.
 from configuracion import *
 
 class EstilosInterfaz(Configuracion):

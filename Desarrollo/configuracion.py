@@ -1,6 +1,7 @@
-# J.C. TRAINING GROUP - Modulo de Configuración Base
-# NOTA: centralizamos las rutas y el estilo visual.
-# Se separo asi para no tener que buscar entre 1000 líneas cuando quiera cambiar un color o mover la base de datos.
+# J.C. TRAINING GROUP - Sistema de Gestion de Atletas 
+# Modulo de Configuración Base
+# Centralizamos las rutas y el estilo visual.
+# Se separo de esa manera para no tener que buscar entre 1000 lineas cuando quiera cambiar un color o mover la base de datos.
 
 import os
 import sys

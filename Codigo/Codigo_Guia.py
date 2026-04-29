@@ -100,7 +100,7 @@ class GymApp:
             self.entries[campo] = entry
 
         # Boton para cargar la foto de la cedula
-        self.btn_foto = ttk.Button(form_panel, text="📷 Seleccionar Foto Cédula", command=self.seleccionar_foto_cedula, bootstyle="info")
+        self.btn_foto = ttk.Button(form_panel, text="Seleccionar Foto Cédula", command=self.seleccionar_foto_cedula, bootstyle="info")
         self.btn_foto.grid(row=(len(self.campos)//2)+1, column=0, columnspan=2, pady=10)
         self.lbl_status_foto = ttk.Label(form_panel, text="Sin archivo seleccionado", background=self.color_panel, font=("Segoe UI", 8, "italic"))
         self.lbl_status_foto.grid(row=(len(self.campos)//2)+1, column=2, columnspan=2, sticky="w")
@@ -119,10 +119,10 @@ class GymApp:
         inner_btn_frame.pack(anchor="center")
         
         ttk.Button(inner_btn_frame, text="REGISTRAR / ACTUALIZAR", command=self.registrar, bootstyle="success", width=22).pack(side="left", padx=5)
-        ttk.Button(inner_btn_frame, text="📊 VER HISTORIAL", command=self.abrir_ventana_historial, bootstyle="info-outline", width=18).pack(side="left", padx=5) 
+        ttk.Button(inner_btn_frame, text="VER HISTORIAL", command=self.abrir_ventana_historial, bootstyle="info-outline", width=18).pack(side="left", padx=5) 
         ttk.Button(inner_btn_frame, text="BORRAR CLIENTE", command=self.borrar, bootstyle="danger", width=18).pack(side="left", padx=5)
         ttk.Button(inner_btn_frame, text="LIMPIAR", command=self.limpiar_campos, bootstyle="secondary", width=12).pack(side="left", padx=5)
-        ttk.Button(inner_btn_frame, text="💾 RESPALDO", command=self.crear_respaldo, bootstyle="warning", width=12).pack(side="left", padx=5)
+        ttk.Button(inner_btn_frame, text="RESPALDO", command=self.crear_respaldo, bootstyle="warning", width=12).pack(side="left", padx=5)
 
         # Seccion de busqueda rapida sobre la tabla de clientes
         search_frame = ttk.Frame(self.root, padding=(20, 10, 20, 0))

@@ -1,6 +1,7 @@
-# J.C. TRAINING GROUP - Panel de Control (Interfaz de Botones)
+# J.C. TRAINING GROUP - Sistema de Gestion de Atletas
+# El panel de Control (Interfaz de Botones)
 # Aqui centralizamos todos los botones de accion del sistema.
-# Usamos un bucle para crearlos para ayudar a que todos tengan el mismo espacio y estilo, manteniendo la interfaz limpia y ordenada.
+# utilizamos un bucle para crearlos y para ayudar a que todos tengan el mismo espacio y estilo, manteniendo la interfaz limpia y ordenada.
 
 import ttkbootstrap as ttk
 from controlador import ControladorAcciones

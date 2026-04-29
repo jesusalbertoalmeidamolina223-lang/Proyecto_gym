@@ -1,6 +1,8 @@
-# J.C. TRAINING GROUP - Cerebro Operativo (Logica de Negocio)
-# Aqui es donde ocurre todo: procesamos los formularios, guardamos fotos y nos aseguramos de que cada cliente tenga su historial al dia.
-# Es la union entre lo que el usuario ve y lo que se guarda en el disco.
+# J.C. TRAINING GROUP - Sistema de Gestion de Atletas
+# Cerebro Operativo (Logica de Negocio)
+# Aqui se procesan los datos de los formularios y se valida la informacion antes de guardarla.
+# El manejo de archivos que nos asegura de que las fotos se guarden bien y el historial no se dañe.
+# Es el puente que Conecta la interfaz con el almacenamiento físico (JSON/Fotos)
 
 from respaldos import *
 
