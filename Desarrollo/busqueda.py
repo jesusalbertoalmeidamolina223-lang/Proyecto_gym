@@ -1,9 +1,8 @@
-# Nombre del archivo: busqueda.py
-# Objetivo: Gestión multimedia y motor de busqueda.
-# Referencias:
-# - Controla el procesamiento de imágenes (PIL/Pillow) para el visor de  las fotos.
-# - Gestiona el almacenamiento fs sico de las fotos vinculadas a cada ID de cliente.
-# - Consulta en tiempo real la busqueda segun el criterio del usuario.
+# J.C. TRAINING GROUP - Sistema de Gestion de Atletas
+# Gestion multimedia y motor de busqueda.
+# Usa Pillow para que las fotos se vean bien en el visor y no den problemas de formato.
+# Se encarga de guardar las fotos en las carpetas locales usando el ID del cliente como referencia.
+# El motor de busqueda: muestra los resultados al momento segun lo que el usuario escriba.
 from crud import *
 
 class BusquedaMedia(CrudBase):
