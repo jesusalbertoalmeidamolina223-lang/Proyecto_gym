@@ -1,15 +1,15 @@
-# SISTEMA DE GESTION: J.C. TRAINING GROUP
+# SISTEMA DE GESTION: J.C. TRAINING GROUP 
 # REQUISITOS TECNICOS PARA EL FUNCIONAMIENTO:
 
-# 1. QUE NECESITA PARA EJECUCION:
+# 1. QUE NECESITA PARA SU EJECUCION:
 #    - Python 3.7 o superior instalado.
 #    - Acceso de escritura en la carpeta del proyecto (para crear la DB y carpetas).
 
-# 2. REQUISITOS EXTERNOS (Instalar vía terminal/CMD):
+# 2. REQUISITOS ADICIONALES: (Instalar vía terminal/CMD):
 #    - pip install ttkbootstrap (Interfaz grAfica moderna y temas oscuros).
 #    - pip install Pillow       (Procesamiento y visualización de fotos).
 
-# 3. ESTRUCTURA DE ARCHIVOS (Deben ubicarse en la misma carpeta):
+# 3. ESTRUCTURA DE ARCHIVOS (Se deben ubicar en la misma carpeta):
 #    - ejecutor.py      -> ARCHIVO PRINCIPAL.
 #    - app.py           -> Ensamblaje de la interfaz (UI).
 #    - botones.py       -> Definición del panel de control.
