@@ -20,7 +20,7 @@ class BusquedaMedia(CrudBase):
             photo = ImageTk.PhotoImage(img)
             self.lbl_foto_visor.config(image=photo, text="")
             self.lbl_foto_visor.image = photo
-        except: 
+        except:  
             self.mostrar_imagen_placeholder()
 
     def mostrar_imagen_placeholder(self):

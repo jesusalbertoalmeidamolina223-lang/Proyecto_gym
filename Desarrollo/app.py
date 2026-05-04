@@ -3,7 +3,7 @@
 # Este es el archivo es donde todo se une. Aqui organizamos como se distribuyen visualmente el formulario,
 # la tabla y el visor de fotos para que el sistema sea comodo de usar en el dia a dia del gimnasio.
 
-import ttkbootstrap as ttk
+import ttkbootstrap as ttk 
 from botones import InterfazBotones
 
 class GymApp(InterfazBotones):

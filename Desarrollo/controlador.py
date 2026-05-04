@@ -97,8 +97,7 @@ class ControladorAcciones(HistorialRespaldos):
         historial.append(registro)
         
         with open(ruta, "w", encoding="utf-8") as f:
-            json.dump(historial, f, indent=4, ensure_ascii=False)
-
+            json.dump(historial, f, indent=4, ensure_ascii=False) 
     def _finalizar_accion(self, mensaje):
         """Refresca la tabla y limpia todo al terminar una tarea."""
         self.actualizar_tabla()

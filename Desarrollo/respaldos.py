@@ -7,7 +7,7 @@ from busqueda import *
 class HistorialRespaldos(BusquedaMedia):
     def abrir_ventana_historial(self):
         """Muestra una ventana nueva con el progreso temporal del atleta seleccionado."""
-        seleccion = self.tree.selection()
+        seleccion = self.tree.selection() 
         if not seleccion:
             messagebox.showwarning("Atencion", "Por favor, elige a un cliente de la lista.")
             return

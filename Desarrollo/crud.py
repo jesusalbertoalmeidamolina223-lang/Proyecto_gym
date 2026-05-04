@@ -9,7 +9,7 @@ class CrudBase(EstilosInterfaz):
         """Esta parte intenta leer el JSON. Si no existe o esto roto, devuelve un dict vacio."""
         try:
             with open(self.db_file, "r", encoding="utf-8") as f: 
-                return json.load(f)
+                return json.load(f) 
         except Exception as e:
             # Si el archivo no existe, no pasa nada,se empieza de cero
             return {}

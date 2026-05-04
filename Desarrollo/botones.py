@@ -3,7 +3,7 @@
 # Aqui centralizamos todos los botones de accion del sistema.
 # utilizamos un bucle para crearlos y para ayudar a que todos tengan el mismo espacio y estilo, manteniendo la interfaz limpia y ordenada.
 
-import ttkbootstrap as ttk
+import ttkbootstrap as ttk 
 from controlador import ControladorAcciones
 
 class InterfazBotones(ControladorAcciones):

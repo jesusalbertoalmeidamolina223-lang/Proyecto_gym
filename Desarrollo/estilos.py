@@ -7,7 +7,7 @@ from configuracion import *
 class EstilosInterfaz(Configuracion):
     def __init__(self, root):
         super().__init__()
-        self.root = root
+        self.root = root 
         
 # Usamos el tema 'darkly' de ttkbootstrap como base
         self.style = ttk.Style(theme="darkly")
