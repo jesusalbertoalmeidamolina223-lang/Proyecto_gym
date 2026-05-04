@@ -1,10 +1,10 @@
 # Importancia del modulo 
-import tkinter as tk
+import tkinter as tk  
 from tkinter import filedialog, messagebox
 # Para una interfaz moderna (estilo dark)
 import ttkbootstrap as ttk      
 from ttkbootstrap.constants import * 
-# Para guardar y leer la base de datos de clientes
+# Para guardar y leer la base de  datos de clientes
 import json   
  # Para gestion de rutas y carpetas del sistema 
 import os  
