@@ -6,13 +6,7 @@
 import os
 import sys
 import json
-import shutil
-from datetime import datetime 
-import tkinter as tk
-from tkinter import filedialog, messagebox
-import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
-from PIL import Image, ImageTk
 
 class Configuracion:
     def __init__(self):
