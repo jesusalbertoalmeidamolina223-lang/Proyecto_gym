@@ -1,5 +1,5 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
-# Gestion de Datos (JSON y Validaciones)
+# Gestiona los datos JSON y Validaciones.
 # Es el motor de los datos se encarga de guardar y cargar todo el historial.
 # Es importante ya que Si esta logica tira error, basicamente el atleta se queda sin registros en el sistema.
 from estilos import *

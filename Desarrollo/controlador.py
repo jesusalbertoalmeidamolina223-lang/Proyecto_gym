@@ -1,14 +1,14 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
-# Cerebro Operativo (Logica de Negocio)
+# Esta parte se encarga de ser el cerebro para la Logica de Negocio.
 # Aqui se procesan los datos de los formularios y se valida la informacion antes de guardarla.
 # El manejo de archivos que nos asegura de que las fotos se guarden bien y el historial no se dañe.
-# Es el puente que Conecta la interfaz con el almacenamiento físico (JSON/Fotos)
+# Es el puente que Conecta la interfaz con el almacenamiento fisico (JSON/Fotos)
 
 from respaldos import *
 
 class ControladorAcciones(HistorialRespaldos):
     def registrar(self):
-        """Proceso para actualizar los datosde los atletas."""
+        """Proceso para actualizar los datos de los atletas."""
         # 1. Validacion rapida de numeros
         if not self.validar_campos_numericos(): return
         

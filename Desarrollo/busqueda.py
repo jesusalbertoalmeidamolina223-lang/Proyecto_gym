@@ -1,6 +1,6 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
 # Gestion multimedia y motor de busqueda.
-# Usa Pillow para que las fotos se vean bien en el visor y no den problemas de formato.
+# Se usa Pillow para que las fotos se vean bien en el visor y no den problemas de formato.
 # Se encarga de guardar las fotos en las carpetas locales usando el ID del cliente como referencia.
 # El motor de busqueda: muestra los resultados al momento segun lo que el usuario escriba.
 from crud import *

@@ -1,7 +1,7 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas 
 # Modulo de Configuración Base
-# Centralizamos las rutas y el estilo visual.
-# Se separo de esa manera para no tener que buscar entre 1000 lineas cuando quiera cambiar un color o mover la base de datos.
+# Configura las rutas y el estilo visual.
+# Se encarga de preparar el entorno para que el sistema funcione sin problemas desde el primer el principio.
 
 import os
 import sys
@@ -11,7 +11,7 @@ from ttkbootstrap.constants import *
 class Configuracion:
     def __init__(self):
 # Gestion de Rutas del Proyecto
-        # En esta parte verificamos si corre como script o como .exe (para que no falle al instalarlo)
+        # En esta parte se verifica si corre como script o como .exe (para que no falle al instalarlo)
         if getattr(sys, 'frozen', False):
             self.base_dir = os.path.dirname(sys.executable)
         else:
@@ -33,7 +33,7 @@ class Configuracion:
         self.color_text = "#FFFFFF"   # Texto base
 
     def _preparar_entorno(self):
-        """Esta aprte crea las carpetas y el JSON base si es la primera vez que se ejecuta."""
+        """Esta parte crea las carpetas y el JSON base si es la primera vez que se ejecuta."""
         for folder in [self.img_dir, self.historial_dir]:
             if not os.path.exists(folder): 
                 os.makedirs(folder)
@@ -42,4 +42,4 @@ class Configuracion:
             # Se agrego un diccionario vacio para evitar errores de lectura inicial
             with open(self.db_file, "w", encoding="utf-8") as f: 
                 json.dump({}, f)
-            print("Base de datos inicializada correctamente.") # Log para control interno
+            print("Base de datos inicializada correctamente.") 

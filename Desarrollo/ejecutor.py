@@ -1,6 +1,6 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
-# Lanzador del Sistema
-# Este es el archivo principal sirbe para iniciar la aplicacion, solo hay que ejecutar este script. 
+# Ejecutor del Sistema
+# Este es el archivo principal sirve para iniciar la aplicacion, solo hay que ejecutar este script. 
 # Se encarga de levantar la ventana aplicar el tema visual y mantener el programa corriendo.
 
 import ttkbootstrap as ttk

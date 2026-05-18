@@ -1,5 +1,5 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
-# Historial de evolucion y copias de seguridad.
+# Se encarga de ver el historial de evolucion y copias de seguridad.
 # en esta parte se gestionan las graficas y la evolucion de medidas de los atletas.
 # Metimos una funcion de respaldo manual para que si el usuario cambia de PC, se pueda llevar toda la base de datos sin problemas.
 from busqueda import *

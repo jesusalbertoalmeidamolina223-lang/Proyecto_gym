@@ -1,7 +1,7 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
 # El panel de Control (Interfaz de Botones)
-# Aqui centralizamos todos los botones de accion del sistema.
-# utilizamos un bucle para crearlos y para ayudar a que todos tengan el mismo espacio y estilo, manteniendo la interfaz limpia y ordenada.
+# Ubicamos todos los botones de accion del sistema.
+# Usamos un bucle para crearlos y para ayudar a que todos tengan el mismo espacio y estilo, manteniendo la interfaz limpia y ordenada.
 
 import ttkbootstrap as ttk 
 from controlador import ControladorAcciones
@@ -16,7 +16,7 @@ class InterfazBotones(ControladorAcciones):
 
         #Configuracion de Botones
         # Formato: ("Texto", comando, "estilo_visual", ancho)
-        # Esto hace que sea muy facil añadir o quitar funciones después.
+        # Nos facilita que sea muy facil añadir o quitar funciones despues.
         btns = [
             ("REGISTRAR", self.registrar, "success", 22),
             ("HISTORIAL", self.abrir_ventana_historial, "info-outline", 18),

@@ -1,5 +1,5 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
-# Ensamblaje Principal de la Interfaz (UI)
+# Se encarga de ser el ensamblaje Principal de la Interfaz (UI)
 # Este es el archivo es donde todo se une. Aqui organizamos como se distribuyen visualmente el formulario,
 # la tabla y el visor de fotos para que el sistema sea comodo de usar en el dia a dia del gimnasio.
 
