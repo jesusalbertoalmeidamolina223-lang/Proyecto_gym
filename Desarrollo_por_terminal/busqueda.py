@@ -1,5 +1,5 @@
-# J.C. TRAINING GROUP - Gestión Pro (Terminal)
-# Gestión Multimedia en Disco y Motor de Búsqueda.
+# J.C. TRAINING GROUP - Gestion Pro (Terminal)
+# Gestion Multimedia en Disco y Motor de Busqueda.
 
 import os
 import shutil

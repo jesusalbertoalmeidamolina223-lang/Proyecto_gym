@@ -1,4 +1,4 @@
-# J.C. TRAINING GROUP - Gestión Pro (Terminal)
+# J.C. TRAINING GROUP - Gestion Pro (Terminal)
 # Cerebro Operativo y Puente de Datos Intermedio.
 
 import os
@@ -9,7 +9,7 @@ class ControladorAcciones:
         self.motor = HistorialRespaldos()
         
     def procesar_registro(self, info_valores, ruta_foto_temporal):
-        """Valida campos numéricos y obligatorios antes de efectuar el guardado."""
+        """Valida campos numericos y obligatorios antes de efectuar el guardado."""
         es_valido, campo_error = self.motor.validar_campos_numericos(info_valores)
         if not es_valido:
             return {"status": "error_num", "campo": campo_error}

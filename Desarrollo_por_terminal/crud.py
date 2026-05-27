@@ -1,5 +1,5 @@
-# J.C. TRAINING GROUP - Gestión Pro (Terminal)
-# Gestión de Datos (Lectura, Escritura y Filtro de Seguridad).
+# J.C. TRAINING GROUP - Gestion Pro (Terminal)
+# Gestion de Datos (Lectura, Escritura y Filtro de Seguridad).
 
 import json
 from configuracion import Configuracion

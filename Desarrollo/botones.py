@@ -1,37 +1,30 @@
 # J.C. TRAINING GROUP - Sistema de Gestion de Atletas
 # El panel de Control (Interfaz de Botones)
 # Ubicamos todos los botones de accion del sistema.
-# Usamos un bucle para crearlos y para ayudar a que todos tengan el mismo espacio y estilo, manteniendo la interfaz limpia y ordenada.
+import ttkbootstrap as ttk
 
-import ttkbootstrap as ttk 
-from controlador import ControladorAcciones
+class InterfazBotones:
+    @staticmethod
+    def construir_panel_botones(contenedor_visual, referencia_app):
+        """Construye el panel de botones en el contenedor visual."""
+        inner_frame = ttk.Frame(contenedor_visual)
+        inner_frame.pack(anchor="center")
 
-class InterfazBotones(ControladorAcciones):
-    def crear_botonera(self, contenedor):
-        """Genera la fila de botones principales en el centro de la pantalla."""
-        
-        # Panel interno para centrar los botones dentro del contenedor principal
-        inner_f = ttk.Frame(contenedor)
-        inner_f.pack(anchor="center")
-
-        #Configuracion de Botones
-        # Formato: ("Texto", comando, "estilo_visual", ancho)
-        # Nos facilita que sea muy facil añadir o quitar funciones despues.
-        btns = [
-            ("REGISTRAR", self.registrar, "success", 22),
-            ("HISTORIAL", self.abrir_ventana_historial, "info-outline", 18),
-            ("BORRAR", self.borrar, "danger", 18),
-            ("LIMPIAR", self.limpiar_campos, "secondary", 12),
-            ("RESPALDO", self.crear_respaldo, "warning", 12), 
-            ("SALIR", self.salir_aplicacion, "danger", 10)
+        # Configuracion de botones con su texto, metodo asociado, estilo visual y ancho especificos
+        esquema_botones = [
+            ("REGISTRAR", referencia_app.ejecutar_registro, "success", 22),
+            ("HISTORIAL", referencia_app.abrir_ventana_historial, "info-outline", 18),
+            ("BORRAR", referencia_app.ejecutar_borrado, "danger", 18),
+            ("LIMPIAR", referencia_app.limpiar_formulario, "secondary", 12),
+            ("RESPALDO", referencia_app.ejecutar_respaldo, "warning", 12), 
+            ("SALIR", referencia_app.solicitar_salida, "danger", 10)
         ]
 
-        # Construccion automatica de la interfaz
-        for texto, comando, estilo, ancho in btns:
+        for texto, metodo, estilo, ancho in esquema_botones:
             ttk.Button(
-                inner_f, 
+                inner_frame, 
                 text=texto, 
-                command=comando, 
+                command=metodo, 
                 bootstyle=estilo, 
                 width=ancho
             ).pack(side="left", padx=5)

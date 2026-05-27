@@ -1,4 +1,4 @@
-# J.C. TRAINING GROUP - Gestión Pro (Terminal)
+# J.C. TRAINING GROUP - Gestion Pro (Terminal)
 # Interfaz de Consola Interactiva.
 
 import os

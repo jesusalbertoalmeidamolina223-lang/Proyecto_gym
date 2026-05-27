@@ -1,5 +1,5 @@
-# J.C. TRAINING GROUP - Gestión Pro (Terminal)
-# Historial de Evolución y Copias de Seguridad.
+# J.C. TRAINING GROUP - Gestion Pro (Terminal)
+# Historial de Evolucion y Copias de Seguridad.
 
 import os
 import json
