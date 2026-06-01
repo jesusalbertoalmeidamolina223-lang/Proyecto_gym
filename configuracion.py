@@ -1,0 +1,20 @@
+import os
+import sys
+
+class Configuracion:
+    def __init__(self):
+        if getattr(sys, 'frozen', False):
+            self.base_dir = os.path.dirname(sys.executable)
+        else:
+            self.base_dir = os.path.dirname(os.path.abspath(__file__))
+
+        self.db_file = os.path.join(self.base_dir, "clientes_gym.json")
+        self.img_dir = os.path.join(self.base_dir, "cedulas")
+        self.historial_dir = os.path.join(self.base_dir, "historiales")
+        
+        self._preparar_entorno()
+
+    def _preparar_entorno(self):
+        for folder in [self.img_dir, self.historial_dir]:
+            if not os.path.exists(folder):
+                os.makedirs(folder)
