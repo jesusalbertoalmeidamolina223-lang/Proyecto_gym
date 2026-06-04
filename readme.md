@@ -1,30 +1,71 @@
+# SISTEMA DE GESTIÓN: J.C. TRAINING GROUP
+
+## REQUISITOS TÉCNICOS PARA EL FUNCIONAMIENTO
+
+### 1. QUÉ NECESITA PARA SU EJECUCIÓN
+* Python 3.7 o superior instalado.
+* Acceso de escritura en la carpeta del proyecto (para crear la DB y carpetas).
+
+### 2. REQUISITOS ADICIONALES (Instalar vía terminal/CMD)
+* `pip install ttkbootstrap` (Interfaz gráfica moderna y temas oscuros).
+* `pip install Pillow` (Procesamiento y visualización de fotos).
+
+---
+
+### 3. ESTRUCTURA INTERNA DEL SISTEMA
+
+**A. LÓGICA DE NEGOCIO (Ubicados en la carpeta `core_logic`):**
+
+* `__init__.py` -> Archivo de inicialización del paquete y exportación limpia de clases.
+
+* `base_datos.py` -> Motor de lectura/escritura JSON de `clientes_gym.json`.
+
+* `motor_atletas.py` -> Lógica de negocio (registro, borrado, filtrado, historial y respaldos).
+
+* `validador.py` -> Validación estricta de campos obligatorios y tipos numéricos.
 
 
-# SISTEMA DE GESTION: J.C. TRAINING GROUP 
+**B. COMPONENTES DE LA INTERFAZ (Ubicados en la carpeta `gui_components`):**
 
-## REQUISITOS TECNICOS PARA EL FUNCIONAMIENTO:
+* `__init__.py` -> Archivo de inicialización del paquete para la importación modular de la UI.
 
-1. QUE NECESITA PARA SU EJECUCION:
-   - Python 3.7 o superior instalado.
-   - Acceso de escritura en la carpeta del proyecto (para crear la DB y carpetas).
+* `botones.py` -> Construcción y asignación de funciones del panel de control de botones.
 
-2. REQUISITOS ADICIONALES: (Instalar vía terminal/CMD):
-   - pip install ttkbootstrap (Interfaz grAfica moderna y temas oscuros).
-   - pip install Pillow       (Procesamiento y visualización de fotos).
+* `formulario.py` -> Maquetación visual y distribución geométrica del formulario de datos.
 
-3. ESTRUCTURA DE ARCHIVOS (Se deben ubicar en la misma carpeta):
-   - ejecutor.py      -> ARCHIVO PRINCIPAL.
-   - app.py           -> Ensamblaje de la interfaz (UI).
-   - botones.py       -> Definición del panel de control.
-   - busqueda.py      -> Logica de multimedia y filtros de tabla.
-   - configuracion.py -> Rutas del sistema y paleta de colores.
-   - controlador.py   -> Logica de negocio (registro, borrado, carga).
-   - crud.py          -> Motor de lectura/escritura JSON y validaciones.
-   - estilos.py       -> Definicion de campos y personalizacion visual.
-   - respaldos.py     -> Gestion de historial de progreso y copias de seguridad.
+* `tabla.py` -> Estructura y configuración del control visual para el listado de atletas.
 
-4. INICIO AUTOMATICO DE LA APLICACION:
-   Al ejecutar 'ejecutor.py', el sistema creara automaticamente:
-   - cedulas     (Carpeta para fotos de atletas).
-   - historiales (Carpeta para archivos JSON individuales de progreso).
-   - clientes_gym.json (Base de datos principal).
+* `visor_fotos.py` -> Área de renderizado e integración visual para las fotografías de los atletas.
+
+
+**C. DOCUMENTACIÓN DE INTELIGENCIA ARTIFICIAL (Ubicados en la carpeta `IA`):**
+
+* `razonamiento.txt` -> Registro técnico explicativo del diagnóstico, desacoplamiento modular del sistema (GUI/CLI/LOGIC) y resúmenes del uso de la IA en la reestructuración del software.
+
+---
+
+### 4. ARCHIVOS RAÍZ (Ubicados por fuera de las carpetas en el directorio principal)
+
+* `ejecutor-gui.py` -> **ARCHIVO PRINCIPAL GUI.** Inicializa la ventana con el tema visual oscuro y lanza la aplicación de escritorio.
+
+* `ejecutor_cli.py` -> Interfaz alternativa por terminal de comandos (CLI) para gestionar atletas, registros y respaldos sin entorno gráfico.
+
+* `app.py` -> Ensamblaje maestro de la interfaz gráfica (UI), conectando los componentes visuales con el motor de lógica.
+
+* `configuracion.py` -> Rutas dinámicas del sistema, detección del entorno de ejecución y creación automática de carpetas indispensables.
+
+* `estilos.py` -> Definición de la paleta de campos maestros y métricas antropométricas del atleta.
+
+* `readme.md` -> Manual técnico de requisitos, dependencias de ejecución e instrucciones iniciales de despliegue.
+
+---
+
+### 5. INICIO AUTOMÁTICO DE LA APLICACIÓN
+
+Al ejecutar `ejecutor-gui.py` o `ejecutor_cli.py`, el sistema preparará el entorno de manera autónoma y creará automáticamente:
+
+* `cedulas` -> Carpeta destinada al almacenamiento local de las fotos de los atletas.
+
+* `historiales` -> Carpeta interna para los archivos JSON individuales que guardan la evolución física.
+
+* `clientes_gym.json` -> Archivo central estructurado como la base de datos principal de la aplicación.
